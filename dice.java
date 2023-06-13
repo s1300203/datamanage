@@ -7,6 +7,7 @@ public class dice {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("What is your name?");
+        System.out.print("> ");
         String name = sc.next();
         System.out.println("Hello, " + name + "!");
         int num1 = rand.nextInt(6) + 1;
@@ -14,15 +15,15 @@ public class dice {
 
         int total = num1 + num2;
 
-        System.out.println("Rolling dice...");
-        System.out.println("Die 1:" + num1);
-        System.out.println("Die 2:" + num2);
-        System.out.println("Total value:" + total);
+        System.out.println("Rolling the dice...");
+        System.out.println("Die 1: " + num1);
+        System.out.println("Die 2: " + num2);
+        System.out.println("Total value: " + total);
 
-         if (total > 7) {
-            System.out.println("You won");
+        if (total > 7) {
+            System.out.println(name + " won!");
         } else {
-            System.out.println("You lost");
+            System.out.println(name + " lost!");
         }
     }
 }
